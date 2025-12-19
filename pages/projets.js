@@ -25,14 +25,14 @@ export default function Projets() {
       link: '/projets/mashop',
     },
     {
-      title: 'MecaShop',
-      description:
-        "Marketplace spécialisée dans la vente de voitures et de pièces détachées, avec recherche avancée et interface intuitive.",
-      image: '/voiture.jpeg',
-      color: 'from-blue-500 to-blue-700',
-      techs: ['React', 'Express', 'PostgreSQL'],
-      link: '/projets/mecashop',
-    },
+  title: 'KJS Server',
+  description:
+    "Notre serveur ultra-performant et personnalisé qui propulse des applications modernes, avec carte interactive, géolocalisation avancée.",
+  image: '/kjs-server-hero.png',
+  color: 'from-purple-500 to-indigo-600',
+  techs: ['Next.js 14', 'KJS Server', 'Google Maps API'],
+  link: '/projets/kjs-server',
+},
   ];
 
   const technologies = [
@@ -228,19 +228,7 @@ export default function Projets() {
         </div>
       </div>
 
-      {/* 🔹 Footer */}
-      <footer className="bg-blue-700 text-white py-8 text-center mt-auto">
-        <div className="container mx-auto px-4">
-          <p className="mb-4">
-            &copy; 2025 <span className="text-orange-400">KJS Groupe</span>. Tous droits réservés.
-          </p>
-          <div className="flex justify-center space-x-6">
-            <Link href="/contact" className="hover:text-orange-400 transition">Contact</Link>
-            <Link href="/a-propos" className="hover:text-orange-400 transition">À Propos</Link>
-            <Link href="/services" className="hover:text-orange-400 transition">Services</Link>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 }

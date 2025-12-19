@@ -180,19 +180,7 @@ export default function Seller() { // Changé en Seller pour matcher le nom du f
         </div>
       </div>
 
-      {/* 🔹 Footer */}
-      <footer className="bg-blue-700 text-white py-8 text-center mt-auto">
-        <div className="container mx-auto px-4">
-          <p className="mb-4">
-            &copy; 2025 <span className="text-orange-400">KJS Groupe</span>. Tous droits réservés.
-          </p>
-          <div className="flex justify-center space-x-6">
-            <Link href="/contact" className="hover:text-orange-400 transition">Contact</Link>
-            <Link href="/a-propos" className="hover:text-orange-400 transition">À Propos</Link>
-            <Link href="/services" className="hover:text-orange-400 transition">Services</Link>
-          </div>
-        </div>
-      </footer>
+     
     </div>
   );
 }

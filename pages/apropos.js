@@ -67,7 +67,7 @@ export default function APropos() {
   const startups = [
     { title: 'Lyspi', desc: 'Connecte les réseaux des startups et promeut leur visibilité.', icon: <FaNetworkWired className="text-4xl text-blue-600 mb-4" /> },
     { title: 'Mashop', desc: 'Plateforme e-commerce pour boutiques et entreprises pour vendre produits et services.', icon: <FaStore className="text-4xl text-orange-500 mb-4" /> },
-    { title: 'MapCap', desc: 'Vente et promotion de véhicules pour particuliers et professionnels.', icon: <FaCar className="text-4xl text-green-600 mb-4" /> },
+    { title: 'KJS Server', desc: 'Notre serveur ultra-performant et personnalisé.', icon: <FaCar className="text-4xl text-green-600 mb-4" /> },
   ];
 
   return (
@@ -221,19 +221,6 @@ export default function APropos() {
         </section>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-blue-700 text-white py-8 text-center mt-auto">
-        <div className="container mx-auto px-4">
-          <p className="mb-4">
-            &copy; 2025 <span className="text-orange-400">KJS Groupe</span>. Tous droits réservés.
-          </p>
-          <div className="flex justify-center space-x-6">
-            <Link href="/contact" className="hover:text-orange-400 transition">Contact</Link>
-            <Link href="/a-propos" className="hover:text-orange-400 transition">À Propos</Link>
-            <Link href="/services" className="hover:text-orange-400 transition">Services</Link>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

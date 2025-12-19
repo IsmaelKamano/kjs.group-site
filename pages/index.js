@@ -160,28 +160,65 @@ export default function Home() {
         <section className="relative h-[calc(100vh-4rem)] flex items-center justify-center text-white overflow-hidden">
           <Image
             src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&q=80&auto=format&fit=crop&w=1200"
-            alt="KJS Groupe - Innovation Digitale"
+            alt="KJS Groupe - Digital Innovation"
             layout="fill"
             objectFit="cover"
             priority
             className="transition-transform duration-500 hover:scale-105"
           />
+
           <div className="absolute inset-0 bg-gradient-to-br from-blue-700/60 to-orange-500/60 opacity-80" />
-          <div className="relative z-10 text-center px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
-              Bienvenue chez <span className="text-orange-400">KJS Groupe</span>
+
+          <div className="relative z-10 text-center px-4 max-w-3xl">
+
+            {/* Titre principal */}
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg uppercase">
+              BIENVENUE À LA SOCIÉTÉ  <span className="text-orange-400">KJS.GROUPE SARL</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-6 drop-shadow-md">
-              Nous créons des solutions digitales innovantes pour un avenir meilleur.
+
+            {/* Titre anglais */}
+            <h2 className="text-xl md:text-2xl italic text-gray-200 mb-6 drop-shadow-md">
+              WELCOME TO KJS.GROUP SARL
+            </h2>
+
+            {/* Slogan FR / EN */}
+            <p className="text-lg md:text-xl mb-2 drop-shadow-md">
+              Innover pour une Afrique connectée et performante
             </p>
-            <Link
-              href="/projets"
-              className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center mx-auto w-fit"
-            >
-              <FaChartLine className="mr-2" /> Découvrez Nos Projets
-            </Link>
+            <p className="text-sm md:text-base italic text-gray-200 mb-4">
+              Innovating for a Connected and High-Performing Africa
+            </p>
+
+            {/* Phrase courte FR / EN */}
+            <p className="text-base md:text-lg mb-6 drop-shadow-md">
+              Notre innovation commence par un clic et se termine par votre sourire
+              <br />
+              <span className="italic text-gray-200">Our innovation starts with a click and ends with your smile</span>
+            </p>
+
+            {/* Deux boutons côte à côte */}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+              {/* Bouton Découvrir Nos Projets */}
+              <Link
+                href="/projets"
+                className="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-orange-600 hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center w-fit"
+              >
+                <FaChartLine className="mr-2" /> Découvrez Nos Projets
+              </Link>
+
+              {/* Bouton Découvrir Nos Services */}
+              <Link
+                href="/services"
+                className="bg-gradient-to-r from-[#1D4ED8] to-[#10B981] text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 hover:scale-105 transition duration-300 ease-in-out flex items-center justify-center w-fit"
+              >
+                <FaUsers className="mr-2" /> Découvrir Nos Services
+              </Link>
+            </div>
+
           </div>
         </section>
+
+
 
         {/* SECTION SERVICES */}
         <section className="py-12 bg-gradient-to-br from-white to-gray-50">
@@ -346,19 +383,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FOOTER */}
-        <footer className="bg-blue-700 text-white py-8 text-center mt-auto">
-          <div className="container mx-auto px-4">
-            <p className="mb-4">
-              &copy; 2023 <span className="text-orange-400">KJS Groupe</span>. Tous droits réservés.
-            </p>
-            <div className="flex justify-center space-x-6">
-              <Link href="/contact" className="hover:text-orange-400 transition">Contact</Link>
-              <Link href="/a-propos" className="hover:text-orange-400 transition">À Propos</Link>
-              <Link href="/services" className="hover:text-orange-400 transition">Services</Link>
-            </div>
-          </div>
-        </footer>
+       
 
       </div>
     </>

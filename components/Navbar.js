@@ -1,3 +1,4 @@
+// components/Navbar.js
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -25,22 +26,23 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-6 items-center text-lg font-medium">
           <Link href="/" className="hover:text-[#F97316] transition-colors">Accueil</Link>
           <Link href="/projets" className="hover:text-[#F97316] transition-colors">Projets</Link>
+          <Link href="/services" className="hover:text-[#F97316] transition-colors">Services</Link>
           <Link href="/apropos" className="hover:text-[#F97316] transition-colors">À Propos</Link>
           <Link href="/contact" className="hover:text-[#F97316] transition-colors">Contact</Link>
           <Link href="/client" className="hover:text-[#10B981] transition-colors">Nos Clients</Link>
           <Link href="/seller" className="hover:text-[#10B981] transition-colors">Nos Partenaires</Link>
           <Link
-            href=""
+            href="/services"
             className="bg-[#F97316] px-6 py-2 rounded-full font-semibold hover:bg-[#EA580C] shadow-md transition-all"
           >
-            KJS.GROUP
+            Découvrir
           </Link>
         </div>
 
         {/* Burger mobile */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -52,21 +54,24 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Menu Mobile */}
+      {/* Menu Mobile Full Width */}
       {isOpen && (
-        <div className="md:hidden bg-gradient-to-b from-[#1D4ED8] to-[#10B981] px-5 py-4 space-y-3 shadow-inner rounded-b-2xl">
-          <Link href="/" className="block hover:text-[#F97316] font-medium transition-colors" onClick={() => setIsOpen(false)}>Accueil</Link>
-          <Link href="/projets" className="block hover:text-[#F97316] font-medium transition-colors" onClick={() => setIsOpen(false)}>Projets</Link>
-          <Link href="/apropos" className="block hover:text-[#F97316] font-medium transition-colors" onClick={() => setIsOpen(false)}>À Propos</Link>
-          <Link href="/contact" className="block hover:text-[#F97316] font-medium transition-colors" onClick={() => setIsOpen(false)}>Contact</Link>
-          <Link href="/client" className="block hover:text-[#10B981] font-medium transition-colors" onClick={() => setIsOpen(false)}>Nos Clients</Link>
-          <Link href="/seller" className="block hover:text-[#10B981] font-medium transition-colors" onClick={() => setIsOpen(false)}>Nos Partenaires</Link>
+        <div className="md:hidden absolute top-full left-0 w-full bg-gradient-to-b from-[#1D4ED8] to-[#10B981] min-h-screen flex flex-col items-center justify-start py-10 space-y-6 shadow-inner transition-all duration-300">
+          <Link href="/" className="block text-xl hover:text-[#F97316]" onClick={() => setIsOpen(false)}>Accueil</Link>
+          <Link href="/projets" className="block text-xl hover:text-[#F97316]" onClick={() => setIsOpen(false)}>Projets</Link>
+          <Link href="/services" className="block text-xl hover:text-[#F97316]" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link href="/apropos" className="block text-xl hover:text-[#F97316]" onClick={() => setIsOpen(false)}>À Propos</Link>
+          <Link href="/contact" className="block text-xl hover:text-[#F97316]" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link href="/client" className="block text-xl hover:text-[#10B981]" onClick={() => setIsOpen(false)}>Nos Clients</Link>
+          <Link href="/seller" className="block text-xl hover:text-[#10B981]" onClick={() => setIsOpen(false)}>Nos Partenaires</Link>
+
+          {/* Bouton Découvrir nos services */}
           <Link
-            href="/login"
-            className="block bg-[#F97316] px-6 py-2 rounded-full font-semibold hover:bg-[#EA580C] text-white text-center shadow-md transition-all"
+            href="/services"
+            className="mt-6 bg-[#F97316] text-white px-10 py-4 rounded-full text-lg font-bold text-center shadow-lg hover:bg-[#EA580C] transition-all"
             onClick={() => setIsOpen(false)}
           >
-            Connexion
+            Découvrir nos services
           </Link>
         </div>
       )}
