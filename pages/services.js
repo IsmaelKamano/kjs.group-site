@@ -36,7 +36,7 @@ export default function Services() {
   const team = [
     {
       name: 'Mamady Sacko',
-      role: 'Directeur du Département Système Logiciel',
+      role: 'Directeur du Département Système Logiciel-Co-fondateur',
       image: '/4.jpg',
       expertise: [
         'Conception et développement d’applications mobiles et web sur mesure',
