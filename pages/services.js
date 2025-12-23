@@ -44,8 +44,7 @@ export default function Services() {
         'Analyse des besoins et cahiers des charges',
         'Intégration et maintenance de solutions',
         'Optimisation et sécurisation applicative',
-        'Formation Microsoft',
-        'Formation Analyse de données',
+       
       ],
     },
     {
@@ -66,10 +65,13 @@ export default function Services() {
       role: 'Directeur du Département Systèmes & Formation - Co-fondateur',
       image: '/Kamano.jpg',
       expertise: [
-        'Déploiement et administration ERP & CRM (Dolibarr, EspoCRM…)',
+        'Déploiement et administration ERP & CRM et Messagerie (Dolibarr,Zimbra etc..)',
         'Intégration des systèmes d’information',
         'Formation aux systèmes ERP, CRM et bonnes pratiques IT',
         'Support technique aux utilisateurs',
+         'Formation Microsoft',
+         'Formation Analyse de données',
+         'Conseil et expertise en ingénierie logicielle'
       ],
     },
   ];

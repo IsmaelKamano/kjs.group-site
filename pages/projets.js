@@ -27,7 +27,7 @@ export default function Projets() {
     {
   title: 'KJS Server',
   description:
-    "Notre serveur ultra-performant et personnalisé qui propulse des applications modernes, avec carte interactive, géolocalisation avancée.",
+    "Notre serveur ultra-performant et personnalisé qui propulse des applications modernes.",
   image: '/kjs-server-hero.png',
   color: 'from-purple-500 to-indigo-600',
   techs: ['Next.js 14', 'KJS Server', 'Google Maps API'],
