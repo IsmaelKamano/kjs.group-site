@@ -13,8 +13,8 @@ export default function Navbar() {
         {/* Logo + Nom */}
         <Link href="/" className="flex items-center space-x-3 text-2xl font-bold hover:text-[#F97316] transition-all">
           <Image
-            src="/premiere.jpg"
-            alt="Logo KJS Groupe"
+            src="/kjs.jpeg"
+            alt="Logo KJS Group"
             width={50}
             height={50}
             className="rounded-full shadow-lg"
